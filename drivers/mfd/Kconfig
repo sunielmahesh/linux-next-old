@@ -2177,4 +2177,12 @@ config MFD_INTEL_M10_BMC
 	  of the device.
 
 endmenu
+
+config FAIRCHILD_FUSB302
+	tristate "Fairchild fusb302 Support"
+	depends on I2C
+	help
+	  This option provides a driver for the Fairchild FUSB302.
+	  It support typec-pd functionality by controlled using I2C.
+
 endif
